@@ -8,7 +8,7 @@ This repository is the Pytorch implementation of the paper "[Near-Lossless Astro
 Clone this repository:
 
 ```bash
-git clone https://github.com/LabShuHangGU/CCA.git
+https://github.com/ynscw/RL-PCA.git
 ```
 Create new environment and install required dependencies
 ```
