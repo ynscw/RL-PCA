@@ -489,9 +489,9 @@ def plot_performance_analysis(train_results, test_results, avg_best_p, save_pref
 
 # 主程序
 if __name__ == "__main__":
-    random.seed(0)
-    np.random.seed(0)
-    torch.manual_seed(0)
+    random.seed(20)
+    np.random.seed(20)
+    torch.manual_seed(20)
 
     # Record program start time
     program_start_time = time.time()
@@ -500,7 +500,7 @@ if __name__ == "__main__":
     print(f'Using device: {device}')
 
     # 加载数据
-    mat_folder = './solarha'  # 修改为你的路径
+    mat_folder = './data/int8'  # 修改为你的路径
     all_data = load_mat_files(mat_folder)
 
     if len(all_data) == 0:
