@@ -35,7 +35,7 @@ class OptimizedRLPCA:
 
     def calculate_reward_smooth(self, ssim_value, reconstruction_error, compression_ratio, p, max_p):
         target_ssim = 0.96
-        ssim_score = 1 / (1 + np.exp(-20 * (ssim_value - target_ssim)))  # sigmoid
+        ssim_score = 1 / (1 + np.exp(-20 * (ssim_value - target_ssim)))  
         ssim_reward = 20 * ssim_score
 
         error_score = np.exp(-reconstruction_error * 1000)
